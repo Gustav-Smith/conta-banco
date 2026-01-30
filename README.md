@@ -1,18 +1,67 @@
-## Getting Started
+# ContaBanco
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um projeto Java simples que implementa um sistema de abertura de conta bancária via terminal.
 
-## Folder Structure
+## 📋 Descrição
 
-The workspace contains two folders by default, where:
+Este projeto foi desenvolvido como exercício prático de Sintaxe Java, abordando conceitos como:
+- Declaração de variáveis com tipos apropriados
+- Uso da classe `Scanner` para entrada de dados via terminal
+- Manipulação de strings e concatenação
+- Conversão de tipos com `Integer.parseInt()` e `Double.parseDouble()`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🏦 Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+O programa solicita as seguintes informações do usuário:
+- **Agência**: Texto (ex: 067-8)
+- **Número da Conta**: Inteiro (ex: 1021)
+- **Nome do Cliente**: Texto (ex: MARIO ANDRADE)
+- **Saldo**: Decimal (ex: 237.48)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Após inserir todas as informações, o sistema exibe uma mensagem de confirmação formatada com os dados inseridos.
 
-## Dependency Management
+## 📁 Estrutura do Projeto
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```
+conta-banco/
+├── src/
+│   └── ContaTerminal.java    # Classe principal do programa
+├── bin/                       # Arquivos compilados
+├── lib/                       # Dependências (se houver)
+└── README.md                  # Este arquivo
+```
+
+## 🚀 Como Usar
+
+### Compilação
+```bash
+javac -encoding UTF-8 -d bin src/ContaTerminal.java
+```
+
+### Execução
+```bash
+java -cp bin ContaTerminal
+```
+
+### Exemplo de Uso
+```
+Por favor, digite o número da Agência !
+067-8
+Por favor, digite o número da Conta !
+1021
+Por favor, digite o nome do Cliente !
+MARIO ANDRADE
+Por favor, digite o saldo da Conta !
+237.48
+
+Olá MARIO ANDRADE, obrigado por criar uma conta em nosso banco, sua agência é 067-8, conta 1021 e seu saldo 237.48 já está disponível para saque
+```
+
+## 📚 Conceitos Abordados
+
+- Variáveis e tipos de dados primitivos
+- Classe `Scanner` para leitura de entrada
+- Manipulação de strings
+- Conversão de tipos
+- Concatenação de strings
+- Método `main` com `throws Exception`
